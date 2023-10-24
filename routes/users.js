@@ -6,8 +6,9 @@ var more = 0;
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  more= more +1; // Increment more on each request
-  sum = sum+more; // Add more to sum
+  more= more +1; 
+  sum = sum+more; 
+  console.log(`Sum is: ${sum}`);
   res.send(`Sum is: ${sum}`);
 });
 
